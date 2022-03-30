@@ -1,0 +1,50 @@
+* {
+  /* outline: dashed 1px #8005fa; */
+  border: 1px solid #8005fa !important;
+}
+
+body {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #95ced3;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+main {
+  background-color: #d3aef8;
+}
+
+
+.inline-p {
+  display: inline-block;
+}
+
+#empty-div {
+  width: 1000px;
+  height: 100px;
+  background-color: #482669;
+}
+
+#para-div {
+  /* float: right; */
+  width: 90%;
+  height: 90%;
+  color: aliceblue;
+  background-color: rgb(18, 105, 182);
+}
+
+
+#overflow-box {
+  max-height: 150px;
+  overflow: scroll;
+  /* overflow: hidden; */
+}
+
+#footer-box {
+  /* mbp margin border padding content */
+  /* trbl */
+  /* padding: 100px 20px 500px 150px; */
+  /* padding: 200px; */
+  border: 5px dashed red !important;
+  margin-top: 50px;
+}
