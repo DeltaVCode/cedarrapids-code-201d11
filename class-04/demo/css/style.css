@@ -1,0 +1,61 @@
+.parent {
+  top: 30px; 
+  position: relative; 
+  background-color: rgba(137, 43, 226, 0.679);
+}
+.price{
+ position: fixed;
+}
+
+section {
+  margin-bottom: 150px;
+  background-color: greenyellow;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+header{
+margin-top: 55px;
+}
+
+main{
+margin: 0 auto;
+width: 1000px;
+text-align: center;
+text-justify: inter-word;
+}
+body{
+  background-color: aliceblue;
+  font-size: 22px;
+}
+h1 {
+  text-align: center;
+  color:rgba(38, 132, 91, 0.826);
+}
+/* nav {
+  text-align: center;
+  margin-top: 30px;
+}
+nav ul {
+  border-top: 10px solid violet;
+  border-bottom: 10px solid violet;
+}
+nav li {
+  display: inline; 
+  margin: 25px;
+} */
+
+img {
+  display: block;
+}
+footer{
+  height: 175px;
+  width: 100%;
+  background-color: aquamarine;
+  position:fixed;
+  bottom: 0;
+}
