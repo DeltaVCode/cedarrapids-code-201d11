@@ -12,8 +12,8 @@ CookieStand.allLocationsRef = [];
 function CookieStand(name, minCustomers, max, aveCookies){
   this.name = name;
   CookieStand.allLocationsRef.push(this.name);
-  this.min = minCustomers;
-  this.max = max;
+  this.minCustomers = minCustomers;
+  this.maxCustomers = max;
   this.aveCookies = aveCookies;
   this.openTime = 6;
   this.closeTime = 21;
