@@ -79,7 +79,7 @@ function renderTable(){
   CookieStand.standsTable.innerHTML = null;
   makeHeaderRow();
   for(let i in CookieStand.all){
-    CookieStand.all.i.createH0ourlyRateTable();
+    CookieStand.all[i].createH0ourlyRateTable();
   }
   sumColumns();
 }
