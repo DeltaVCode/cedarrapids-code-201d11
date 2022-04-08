@@ -9,11 +9,11 @@ CookieStand.allLocationsRef = [];
 //all are propertiess of CoookieStand function
 //TODO add no maximum lower than minimum if(min > max) {return alert('min must be less than max')}
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function CookieStand(name, minCustomers, max, aveCookies){
+function CookieStand(name, minCustomers, maxCustomers, aveCookies) {
   this.name = name;
   CookieStand.allLocationsRef.push(this.name);
-  this.min = minCustomers;
-  this.max = max;
+  this.minCustomers = minCustomers;
+  this.maxCustomers = maxCustomers;
   this.aveCookies = aveCookies;
   this.openTime = 6;
   this.closeTime = 21;
@@ -31,10 +31,10 @@ CookieStand.prototype.randomRate = function(){
     this.cookieSoldArray.push(Math.floor(this.aveCookies * (Math.random() * (this.maxCustomers - this.minCustomers + 1) + this.minCustomers)));
   };
   this.cookieSoldTotal = 0;
-  for(i in this.cookiesSoldArray){
-    this.cookieSoldTotal += this.cookiesSoldArray[i];
+  for (let i in this.cookieSoldArray) {
+    this.cookieSoldTotal += this.cookieSoldArray[i];
   }
-  this.cookiesSoldArray.push(this.cookieSoldTotal);
+  this.cookieSoldArray.push(this.cookieSoldTotal);
 };
 
 CookieStand.prototype.createHourlyRateTable = function(){
